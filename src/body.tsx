@@ -1,11 +1,37 @@
+
+// function getDateFormat() {
+// 	const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+// 	const date = new Date();
+// 	// date.setDate(date.getDate)
+// 	const month = months[date.getMonth()];
+// 	const day = String(date.getDate()).padStart(2, '0');
+// 	return `${month} ${day}`;
+// }
+
+// Result: "May 01, 2024"
+
+
 export const body = (name: string) =>
-	`%2ATo%2A%20%20%0AThe%20Dean%20and%20Principal%2C%20ZHCET%2C%20%20%0AAligarh%20Muslim%20University%20%0A%0A%2ASubject%3A%2A%20Application%20for%20Postponement%20of%20the%20Exam%20on%2018th%20September%0A%0ARespected%20Sir%2C%0A%0AI%20hope%20this%20letter%20finds%20you%20well.%20I%20am%20writing%20on%20behalf%20of%20the%20students%20regarding%20the%20scheduled%20exam%20on%2018th%20September.%20Due%20to%20the%20continuous%20heavy%20rainfall%20since%20midnight%20of%2017th%20September%2C%20many%20students%2C%20both%20hostel%20residents%20and%20local%20commuters%2C%20are%20facing%20serious%20challenges%20in%20reaching%20the%20university%20safely.%20Additionally%2C%20the%20weather%20forecast%20predicts%20continued%20heavy%20rain%20throughout%20tomorrow%2C%20which%20further%20exacerbates%20the%20situation.%0A%0AThe%20hostel%20students%20are%20finding%20it%20difficult%20to%20step%20out%20of%20their%20accommodations%20due%20to%20waterlogging%2C%20and%20local%20students%20face%20transportation%20issues%20as%20the%20roads%20are%20either%20flooded%20or%20unsafe%20for%20travel.%20Given%20these%20circumstances%2C%20we%20kindly%20request%20you%20to%20consider%20postponing%20the%20exam%20to%20ensure%20the%20safety%20and%20well-being%20of%20all%20students.%0A%0AWe%20hope%20you%20will%20understand%20our%20concerns%20and%20take%20appropriate%20action%20in%20light%20of%20the%20weather%20conditions.%0A%0AThank%20you%20for%20your%20consideration.%0A%0AYours%20sincerely%2C%20%20%0A${name}%20%20%20%0AZHCET%2C%20AMU%0A${new Date().toLocaleDateString()}`;
+	encodeURI(`Respected Sir,
+I hope this message finds you well. I am writing to express a humble request on behalf of the students of [Your College Name], following the sad demise of Shri Ratan Tata, a visionary Indian industrialist and a leader who has significantly contributed to the nation's growth.
+
+Shri Ratan Tata's passing on 10th October is a great loss for the entire country. His contributions to the Indian industry, philanthropy, and society have touched millions of lives, including us, the students who look up to him for inspiration.
+
+In honor of his extraordinary life and his service to the nation, we kindly request the college to declare a holiday as a mark of respect and tribute to Shri Ratan Tata. This would allow the students and faculty to reflect on his legacy and his values of leadership, humility, and service to the community.
+
+We sincerely hope you will consider our request favorably.
+
+Thank you for your understanding.
+
+Yours sincerely,  
+${name} 
+Student of ZHCET, AMU`)
 
 export const AccountIcon = () => (
 	<svg
 		aria-hidden="true"
 		xmlns="http://www.w3.org/2000/svg"
-		class="h-5 w-5 text-gray-400"
+		class="w-5 h-5 text-gray-400"
 		viewBox="0 0 24 24"
 	>
 		<path
